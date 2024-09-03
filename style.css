@@ -1,9 +1,9 @@
 :root{
     --cor-fundo: #2b2a2a;
     --cor-secundaria: #464545;
-    --borda-objetos: 20px;
-    --tamanho-fonte: 14px;
-    --padding-links: 7.5px;
+    --borda-objetos: 1.3rem;
+    --tamanho-fonte: 0.9rem;
+    --padding-links: 0.469rem;
     --fonte-primaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --fonte-secundaria: Arial, Helvetica, sans-serif;
 }
@@ -22,22 +22,22 @@ body{
     padding: 2%;
 }
 .item{
-    padding: 20px 10px 10px 10px;
-    width: 40px;
-    height: 40px;
+    padding: 1.25rem 0.6rem 0.6rem 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
     cursor: pointer;
 }
 .item:hover{
     background-color: var(--cor-secundaria);
-    padding: 20px 10px 10px 10px;
-    width: 40px;
-    height: 40px;
+    padding: 1.25rem 0.6rem 0.6rem 0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
     cursor: pointer;
 }
 .principal{
     align-items: center;
     text-align: center;
-    padding: 0px 40px 80px 40px;
+    padding: 0rem 2.5rem 5rem 2.5rem;
 }
 .pesquisa{
     align-items: center;
@@ -46,8 +46,8 @@ body{
     justify-content: center;
 }
 button{
-    width: 45px;
-    height: 45px;
+    width: 2.813rem;
+    height: 2.813rem;
     background-color: var(--cor-secundaria);
     border: none;
 }
@@ -64,13 +64,13 @@ button{
 input{
     border: none;
     background-color: var(--cor-secundaria);
-    width: 550px;
-    height: 45px;
-    font-size: 16px;
+    width:  34.375rem;
+    height: 2.813rem;
+    font-size:  1rem;
     color: white;
     margin-top: auto;
     margin-bottom: auto;
-    padding-inline-start: 6px;
+    padding-inline-start:  0.375rem;
     outline: none;
 }
 ::placeholder{
@@ -78,42 +78,39 @@ input{
     text-overflow: ellipsis;
 }
 .conteiner{
-    margin-top: 1%;
-    margin-left: 26%;
-    margin-right: 26%;
     display: flex;
-    justify-content: space-evenly;
+    width: 37.5rem;
     flex-wrap: wrap;
-    order: 1;
-    max-width:50%;
-    min-width: 10%;
+    align-content: flex-start;
+    margin: auto;
 
 }
 .youtube{
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
+    gap: 0.6rem;
+    padding-left: 1.563rem;
+    padding-right: 1.563rem;
+    padding-top: 0.625rem;
 }
 .con__box{
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     background-color: var(--cor-secundaria);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     display: flex;
 }
 .con__img{
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height: 2.188rem;
     margin: auto;
 
 }
 .con__title{
     text-align: center;
-    margin: 2px 0px 0px;
+    margin: 0.125rem 0rem 0rem;
     color: white;
-    font-size: 14px;
+    font-size: 0.75rem;
     font-family:var(--fonte-primaria);
     font-stretch: condensed;
     font-style: normal;
@@ -124,10 +121,10 @@ footer{
     padding: 0;
 }
 .rodape{
-    margin: 0px;
-    box-shadow: #1b1b1b 0px 0px 15px;
+    margin: 0rem;
+    box-shadow: #1b1b1b 0rem 0rem 0.938rem;
     position: absolute;
-    bottom: 0px;
+    bottom: 0rem;
     width: 100%;
     height: 2.5rem;
     background-color: var(--cor-fundo);
@@ -159,14 +156,14 @@ p:hover{
 .decoracao{
     background-color: var(--cor-fundo);
     padding: var(--padding-links);
-    border: 0.5px solid white;
-    border-radius: 20px;
+    border: 0.031rem solid white;
+    border-radius: 1.25rem;
 }
 .decoracao:hover{
     background-color: var(--cor-fundo);
     padding: var(--padding-links);
-    border: 0.5px solid gray;
-    border-radius: 20px;
+    border: 0.031rem solid gray;
+    border-radius: 1.25rem;
 }
 .decoracao2{
     padding: var(--padding-links);
@@ -184,7 +181,35 @@ p:hover{
 .juntar{
     display: flex;
     background-color: var(--cor-secundaria);
-    padding: 0px;
+    padding: 0rem;
     border: 0.0001px solid grey;
-    border-radius: 10px;
+    border-radius: 0.625rem;
+}
+img{
+    object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .principal{
+        padding-top: 5rem;
+    }
+    .conteiner{
+        padding-top: 4rem;
+        width: 18.8rem;
+    }
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        margin: auto;
+        height:auto;
+    }
+    .conteiner__principal{
+        flex-wrap: wrap;
+    }
+    .conteiner__secundario{
+        flex-wrap: wrap;
+    }
 }
